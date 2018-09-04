@@ -4,7 +4,8 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "deploy": "npm run build && git add . && git commit -a && npm version patch && git push origin --all && npm publish"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,13 @@
     "fuse-box"
   ],
   "dependencies": {
+    "escodegen": "^1.11.0",
+    "esprima": "^4.0.1",
     "unassert": "^1.5.1"
   },
   "version": "1.0.0",
   "devDependencies": {
-    "typescript": "^3.0.3",
-    "unassert": "^1.5.1"
+    "typescript": "^3.0.3"
   },
   "author": "Fredrik Lidström",
   "license": "NLPL"
