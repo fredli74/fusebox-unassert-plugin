@@ -1,0 +1,30 @@
+{
+  "name": "fusebox-unassert-plugin",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredli74/fusebox-unassert-plugin.git"
+  },
+  "peerDependencies": {
+    "fuse-box": "^3.5.0"
+  },
+  "keywords": [
+    "unassert",
+    "fuse-box"
+  ],
+  "dependencies": {
+    "unassert": "^1.5.1"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "typescript": "^3.0.3",
+    "unassert": "^1.5.1"
+  },
+  "author": "Fredrik Lidström",
+  "license": "NLPL"
+}
